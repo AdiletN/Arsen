@@ -1,0 +1,406 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background-color: #27272B;
+}
+.conteiner{
+	max-width: 1130px;
+	width: 100%;
+	margin: 0 auto;
+}
+.back-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),  url("Welcome.jpg");
+	background-size: auto;
+	height: 700px;
+	/* position: relative; */
+}
+.header-nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.header-wrapper{
+    padding-top: 30px;
+}
+.navigation{
+	font-size: 20px;
+	font-family: "Comfortaa", sans-serif;
+	font-weight: bold;
+	color: #FFE14D;
+}
+/* .wellcome-wrapper{
+	display: flex;
+} */
+.wellcome-top{
+	padding-top: 200px;
+}
+.main-text{
+	font-size: 100px;
+	font-family: "Comfortaa", sans-serif;
+	font-weight: 400;
+	color:#FFE14D ;
+}
+.minor-text{
+	font-size: 40px;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	color: #D7D4CC;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+.link-text{
+	font-size: 40px;
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+	color: black;
+}
+.like-botton{
+	display: flex;
+	background-color: #FFE14D;
+	border-radius: 30px;
+	width: 200px;
+	height: 70px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+}
+.header{
+	position: fixed;
+	left: 320px;
+	z-index: 10;
+}
+#right-text{
+	font-size: 25px;
+}
+.wellcome-right{
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+.family{
+	margin-top: 70px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),  url("Family.jpg");
+	background-size: cover;
+	height: 700px;
+}
+.family-main-text{
+	font-size: 80px;
+	padding-top: 60px;
+	font-family: "Comfortaa", sans-serif;
+	font-weight: 400;
+	color:#FFE14D ;
+}
+.family-tree{
+	width: 1000px;
+}
+.tree-box{
+	position: relative;
+}
+.family-tree{
+	position: absolute;
+	left: 50px;
+	top: 180px;
+}
+.central-stick{
+	position: absolute;
+	left: 540px;
+	top: 230px;
+}
+.right-stick{
+	position: absolute;
+	left: 840px;
+	top: 192px;
+}
+.family-facts{
+	position: absolute;
+	width: 400px;
+	border: 2px solid #FFE14D;
+	border-radius: 35px;
+	font-size: 20px;
+	font-family: "Inter", sans-serif;
+	font-weight: 300;
+	color: #D7D4CC;
+	padding: 5px;
+	text-align: center;
+}
+.family-stage2, .family-stage4{
+	position: relative;
+}
+#bottom{
+	left: 355px;
+	top: 303px;
+}
+#right{
+	left: 650px;
+	top: 33px;
+}
+#left{
+	top: 21px;
+}
+.edu-title-text{
+	font-family: "Comfortaa", sans-serif;
+	font-size: 50px;
+	font-weight: 500;
+	color: #FFE14D;
+	margin-top: 90px;
+}
+.education{
+	height: 70vh;
+}
+.edu-boxes{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.box-title{
+	font-size: 30px;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	color: #FFE14D;
+}
+.box-paragraf{
+	font-size: 18px;
+	font-family: "Inter", sans-serif;
+	font-weight: 300;
+	color: #D7D4CC;
+}
+.edu-box1, .edu-box3{
+	margin-top: 150px;
+	text-align: center;
+}
+.edu-box2{
+	text-align: center;
+}
+.edu-title{
+	display: flex;
+	justify-content: center;
+}
+.hobby-title{
+	font-family: "Comfortaa", sans-serif;
+	font-size: 50px;
+	font-weight: 500;
+	color: #FFE14D;
+	margin-top: 100px;
+}
+.hobby-bottom{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+.hobby-boxes{
+	display: flex;
+	overflow: hidden;
+	width: 1000px;
+	height: 600px;
+	gap: 50px;
+}
+.card{
+	transition: flex 0.5s ease;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	border-radius: 20px;
+	z-index: 1;
+	width: 100%;
+	position: relative;
+}
+.card:hover{
+	flex: 3;
+}
+.card-title{
+	font-size: 20px; 
+	font-family: "Comfortaa", sans-serif;
+	font-weight: 400;
+	color: white;
+	position: absolute;
+	top: 0;
+}
+
+.card-paragraf{
+	font-size: 20px;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	color: white;
+	position: absolute;
+	z-index: 3;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+	top: 200px;
+	padding: 5px;
+}
+.card1{
+	background-image: url("chess.jpeg");
+	background-size: cover;
+	background-position: top center;
+}
+.card2{
+	background-image: url("billiard.jpeg");
+	background-size: cover;
+	background-position: bottom center;
+}
+.card3{
+	background-image: url("basketball.jpeg");
+	background-size: cover;
+	background-position: top center;
+}
+.card4{
+	background-image: url("coding.jpeg");
+	background-size: cover;
+	background-position: top center;
+}
+.skills-section {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	max-width: 600px;
+}
+
+.skills-header {
+	font-size: 50px;
+	font-weight: 400;
+	color:#FFE14D;
+	font-family: "Comfortaa", sans-serif; 
+}
+
+.skill-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+	border: 2px solid #FFE14D;
+	padding: 15px;
+	border-radius: 8px;
+}
+
+.skill-icon {
+	width: 40px;
+	height: 40px;
+	background-color: #4b4b4b;
+	border-radius: 50%;
+}
+
+.skill-details {
+	display: flex;
+	flex-direction: column;
+}
+
+.skill-title {
+	font-size: 20px;
+	font-weight: 600;
+	color: #D7D4CC;
+	font-family: "Inter", sans-serif;
+}
+
+.skill-level {
+	font-size: 18px;
+	margin: 5px 0;
+}
+
+.skill-description {
+	font-size: 16px;
+	color: #ddd;
+}
+
+.image-section {
+	max-width: 700px;
+	display: flex;
+	align-items: end;
+}
+
+.image-section img {
+	width: 100%;
+	border-radius: 8px;
+}
+.skills-wrapper{
+	display: flex;
+	margin-top: 160px;
+	gap: 70px;
+}
+
+.proj-image{
+	width: 700px;
+	height: 400px;
+	object-fit: cover;
+	object-position: top center;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.proj{
+	display: flex;
+	max-width: 1200px;
+}
+.project-bottom-title{
+	font-size: 50px;
+	font-family: "Comfortaa", sans-serif;
+	font-weight: 400;
+	color: #FFE14D;
+	text-align: left;
+	padding-top: 70px;
+}
+.port-blocks{
+	display: flex;
+    overflow-x: auto; 
+    white-space: nowrap;
+    gap: 80px;
+}
+.port-bottom{
+	margin-top: 30px;
+}
+.project-bottom{
+	border: 2px solid #FFE14D;
+	border-left-color:#27272B;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.footer-wrapper{
+	display: flex;
+}
+.footer-image{
+	width: 300px;
+}
+.footer{
+	background-color: #6f7073;
+}
+.footer-right{
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+}
+.text{
+	color: #FFE14D;
+	font-family: "Comfortaa", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+}
+.footer-right-bottom{
+	margin-top: 20px;
+	margin-left: 60px;
+	line-height: 30px;
+}
